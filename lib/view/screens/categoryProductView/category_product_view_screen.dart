@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:shop_nest/utils/app_assets.dart';
 import 'package:shop_nest/view/widgets/product_item.dart';
 
-class WishScreen extends StatelessWidget {
-  const WishScreen({super.key});
+class CategoryProductViewScreen extends StatelessWidget {
+  const CategoryProductViewScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class WishScreen extends StatelessWidget {
               crossAxisCount: 3,
               mainAxisSpacing: 1,
               crossAxisSpacing: 1,
-              childAspectRatio: 1 /1.18,
+              childAspectRatio: 1 / 1.18,
             ),
             itemBuilder: (context, constraints) {
               return ProductItem(
@@ -29,7 +29,7 @@ class WishScreen extends StatelessWidget {
                 price: "\$100",
                 star: "4.6",
                 icon: Icons.delete_outline,
-                onTapFavorite: (){},
+                onTapFavorite: () {},
               );
             },
           ),

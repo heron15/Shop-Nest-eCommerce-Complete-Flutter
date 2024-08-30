@@ -8,6 +8,7 @@ import 'package:shop_nest/utils/app_string.dart';
 import 'package:shop_nest/view/screens/home/controller/home_screen_controller.dart';
 import 'package:shop_nest/view/screens/home/inner_widget/slider_banner.dart';
 import 'package:shop_nest/view/screens/mainBottomBar/controller/main_bottom_bar_screen_controller.dart';
+import 'package:shop_nest/view/screens/search/search_screen.dart';
 import 'package:shop_nest/view/widgets/app_bar_action_item.dart';
 import 'package:shop_nest/view/widgets/category_item.dart';
 import 'package:shop_nest/view/widgets/product_item.dart';
@@ -68,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 title: "New Year Special Shoe",
                 price: "\$ 2000",
                 star: "4.8",
-                onTapProduct: () {},
+                icon: Icons.favorite_border,
                 onTapFavorite: () {},
               );
             },
@@ -98,7 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 title: "New Year Special Shoe",
                 price: "\$ 2000",
                 star: "4.8",
-                onTapProduct: () {},
+                icon: Icons.favorite_border,
                 onTapFavorite: () {},
               );
             },
@@ -128,7 +129,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 title: "New Year Special Shoe",
                 price: "\$ 2000",
                 star: "4.8",
-                onTapProduct: () {},
+                icon: Icons.favorite_border,
                 onTapFavorite: () {},
               );
             },
@@ -149,7 +150,7 @@ class _HomeScreenState extends State<HomeScreen> {
           },
         ),
         Container(
-          height: 95,
+          height: 90,
           margin: const EdgeInsets.symmetric(horizontal: 8),
           child: ListView.builder(
             itemCount: 7,
@@ -157,7 +158,7 @@ class _HomeScreenState extends State<HomeScreen> {
             itemBuilder: (context, index) {
               return const CategoryItem(
                 image: AppAssets.category,
-                title: "Food",
+                title: "Food Food Food",
               );
             },
           ),
@@ -211,7 +212,12 @@ class _HomeScreenState extends State<HomeScreen> {
   ///------search bar section------///
   Widget searchBar() {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        showSearch(
+          context: context,
+          delegate: SearchScreen(),
+        );
+      },
       child: Container(
         width: double.maxFinite,
         height: 50,

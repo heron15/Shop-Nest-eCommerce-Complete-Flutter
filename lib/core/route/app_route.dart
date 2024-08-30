@@ -5,6 +5,7 @@ import 'package:shop_nest/view/screens/auth/complete_profile/complete_profile_sc
 import 'package:shop_nest/view/screens/auth/login/login_screen.dart';
 import 'package:shop_nest/view/screens/auth/otp_verify/otp_verify_screen.dart';
 import 'package:shop_nest/view/screens/categories/categories_screen.dart';
+import 'package:shop_nest/view/screens/categoryProductView/category_product_view_screen.dart';
 import 'package:shop_nest/view/screens/home/home_screen.dart';
 import 'package:shop_nest/view/screens/mainBottomBar/main_bottom_bar_screen.dart';
 import 'package:shop_nest/view/screens/splash/splash_screen.dart';
@@ -18,6 +19,7 @@ class AppRoute {
   static const String _mainBottomBarScreenPath = "/main_bottom_bar_screen";
   static const String _homeScreenPath = "/home_screen";
   static const String _categoriesScreenPath = "/categories_screen";
+  static const String _categoryProductViewScreenPath = "/category_product_view_screen";
 
   ///------Route name------///
   static const String splashScreen = "splash";
@@ -27,6 +29,7 @@ class AppRoute {
   static const String mainBottomBarScreen = "mainBottomBar";
   static const String homeScreen = "home";
   static const String categoriesScreen = "categories";
+  static const String categoryProductView = "categoryProductView";
 
   static final router = GoRouter(
     initialLocation: _splashScreenPath,
@@ -66,6 +69,11 @@ class AppRoute {
         name: categoriesScreen,
         path: _categoriesScreenPath,
         builder: (context, state) => const CategoriesScreen(),
+      ),
+      GoRoute(
+        name: categoryProductView,
+        path: _categoryProductViewScreenPath,
+        builder: (context, state) => const CategoryProductViewScreen(),
       ),
     ],
   );
