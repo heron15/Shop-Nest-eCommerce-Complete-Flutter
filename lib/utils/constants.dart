@@ -1,4 +1,4 @@
-class ValidationChecking {
+class Constants {
   static String? validateEmail(String? value) {
     const emailPattern = r'^[^@]+@[^@]+\.[^@]+';
     final regex = RegExp(emailPattern);

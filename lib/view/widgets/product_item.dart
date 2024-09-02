@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:shop_nest/core/route/app_route.dart';
 import 'package:shop_nest/utils/app_color.dart';
 
 class ProductItem extends StatelessWidget {
@@ -23,7 +25,9 @@ class ProductItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return FittedBox(
       child: GestureDetector(
-        onTap: (){},
+        onTap: () {
+          context.pushNamed(AppRoute.productDetails);
+        },
         child: Card(
           color: AppColor.white,
           elevation: 3,
@@ -32,6 +36,7 @@ class ProductItem extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                ///------product image part------///
                 Container(
                   padding: const EdgeInsets.all(7),
                   decoration: const BoxDecoration(
@@ -46,6 +51,8 @@ class ProductItem extends StatelessWidget {
                     fit: BoxFit.fitWidth,
                   ),
                 ),
+
+                ///------product title part------///
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
                   child: Text(
@@ -58,8 +65,10 @@ class ProductItem extends StatelessWidget {
                     ),
                   ),
                 ),
+
+                ///------price, rating & favorite button part------///
                 Padding(
-                  padding: const EdgeInsets.only(left: 8,right: 8,bottom: 8),
+                  padding: const EdgeInsets.only(left: 8, right: 8, bottom: 8),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [

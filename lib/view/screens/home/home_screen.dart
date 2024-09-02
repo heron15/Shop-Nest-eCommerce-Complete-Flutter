@@ -7,7 +7,7 @@ import 'package:shop_nest/utils/app_color.dart';
 import 'package:shop_nest/utils/app_string.dart';
 import 'package:shop_nest/view/screens/home/controller/home_screen_controller.dart';
 import 'package:shop_nest/view/screens/home/inner_widget/slider_banner.dart';
-import 'package:shop_nest/view/screens/mainBottomBar/controller/main_bottom_bar_screen_controller.dart';
+import 'package:shop_nest/view/screens/main_bottom_bar/controller/main_bottom_bar_screen_controller.dart';
 import 'package:shop_nest/view/screens/search/search_screen.dart';
 import 'package:shop_nest/view/widgets/app_bar_action_item.dart';
 import 'package:shop_nest/view/widgets/category_item.dart';

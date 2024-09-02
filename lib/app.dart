@@ -29,6 +29,7 @@ class ShopNest extends StatelessWidget {
       routeInformationProvider: AppRoute.router.routeInformationProvider,
       initialBinding: Dependency(),
       theme: ThemeData(
+        colorSchemeSeed: AppColor.primary,
         scaffoldBackgroundColor: AppColor.white,
         elevatedButtonTheme: getElevatedButtonThemeData(),
         appBarTheme: getAppBarTheme(),

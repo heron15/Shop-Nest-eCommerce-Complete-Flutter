@@ -1,13 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
 import 'package:shop_nest/app.dart';
+import 'package:shop_nest/view/screens/add_review/add_review_screen.dart';
 import 'package:shop_nest/view/screens/auth/complete_profile/complete_profile_screen.dart';
 import 'package:shop_nest/view/screens/auth/login/login_screen.dart';
 import 'package:shop_nest/view/screens/auth/otp_verify/otp_verify_screen.dart';
 import 'package:shop_nest/view/screens/categories/categories_screen.dart';
-import 'package:shop_nest/view/screens/categoryProductView/category_product_view_screen.dart';
+import 'package:shop_nest/view/screens/category_product_view/category_product_view_screen.dart';
 import 'package:shop_nest/view/screens/home/home_screen.dart';
-import 'package:shop_nest/view/screens/mainBottomBar/main_bottom_bar_screen.dart';
+import 'package:shop_nest/view/screens/main_bottom_bar/main_bottom_bar_screen.dart';
+import 'package:shop_nest/view/screens/product_details/product_details_screen.dart';
+import 'package:shop_nest/view/screens/review/review_screen.dart';
 import 'package:shop_nest/view/screens/splash/splash_screen.dart';
 
 class AppRoute {
@@ -20,6 +23,9 @@ class AppRoute {
   static const String _homeScreenPath = "/home_screen";
   static const String _categoriesScreenPath = "/categories_screen";
   static const String _categoryProductViewScreenPath = "/category_product_view_screen";
+  static const String _productDetailsScreenPath = "/product_details_screen";
+  static const String _reviewScreenPath = "/review_screen";
+  static const String _addReviewScreenPath = "/add_review_screen";
 
   ///------Route name------///
   static const String splashScreen = "splash";
@@ -30,6 +36,9 @@ class AppRoute {
   static const String homeScreen = "home";
   static const String categoriesScreen = "categories";
   static const String categoryProductView = "categoryProductView";
+  static const String productDetails = "productDetails";
+  static const String reviewScreen = "reviewScreen";
+  static const String addReviewScreen = "addReviewScreen";
 
   static final router = GoRouter(
     initialLocation: _splashScreenPath,
@@ -74,6 +83,21 @@ class AppRoute {
         name: categoryProductView,
         path: _categoryProductViewScreenPath,
         builder: (context, state) => const CategoryProductViewScreen(),
+      ),
+      GoRoute(
+        name: productDetails,
+        path: _productDetailsScreenPath,
+        builder: (context, state) => const ProductDetailsScreen(),
+      ),
+      GoRoute(
+        name: reviewScreen,
+        path: _reviewScreenPath,
+        builder: (context, state) => const ReviewScreen(),
+      ),
+      GoRoute(
+        name: addReviewScreen,
+        path: _addReviewScreenPath,
+        builder: (context, state) => const AddReviewScreen(),
       ),
     ],
   );

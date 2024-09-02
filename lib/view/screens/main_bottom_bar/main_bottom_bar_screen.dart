@@ -4,8 +4,8 @@ import 'package:shop_nest/utils/app_color.dart';
 import 'package:shop_nest/view/screens/cart/cart_screen.dart';
 import 'package:shop_nest/view/screens/categories/categories_screen.dart';
 import 'package:shop_nest/view/screens/home/home_screen.dart';
-import 'package:shop_nest/view/screens/mainBottomBar/controller/main_bottom_bar_screen_controller.dart';
-import 'package:shop_nest/view/screens/mainBottomBar/inner_widget/custom_nav_item.dart';
+import 'package:shop_nest/view/screens/main_bottom_bar/controller/main_bottom_bar_screen_controller.dart';
+import 'package:shop_nest/view/screens/main_bottom_bar/inner_widget/custom_nav_item.dart';
 import 'package:shop_nest/view/screens/wish/wish_screen.dart';
 
 class MainBottomBarScreen extends StatefulWidget {

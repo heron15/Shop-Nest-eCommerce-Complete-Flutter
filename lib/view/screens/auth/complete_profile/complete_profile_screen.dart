@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shop_nest/core/route/app_route.dart';
 import 'package:shop_nest/utils/app_string.dart';
-import 'package:shop_nest/utils/validation_checking.dart';
+import 'package:shop_nest/utils/constants.dart';
 import 'package:shop_nest/view/widgets/text_form_field_custom.dart';
 import 'package:shop_nest/view/widgets/top_info.dart';
 
@@ -49,7 +49,7 @@ class _CompleteProfileScreenState extends State<CompleteProfileScreen> {
                       hintText: AppString.firstName,
                       topPadding: 20,
                       validator: (value) {
-                        return ValidationChecking.nullAndNotEmpty(
+                        return Constants.nullAndNotEmpty(
                           value,
                           AppString.pleaseEnterYourFirstName,
                         );
@@ -63,7 +63,7 @@ class _CompleteProfileScreenState extends State<CompleteProfileScreen> {
                       hintText: AppString.lastName,
                       topPadding: 20,
                       validator: (value) {
-                        return ValidationChecking.nullAndNotEmpty(
+                        return Constants.nullAndNotEmpty(
                           value,
                           AppString.pleaseEnterYourLastName,
                         );
@@ -77,7 +77,7 @@ class _CompleteProfileScreenState extends State<CompleteProfileScreen> {
                       hintText: AppString.mobile,
                       topPadding: 20,
                       validator: (value) {
-                        return ValidationChecking.nullAndNotEmpty(
+                        return Constants.nullAndNotEmpty(
                           value,
                           AppString.pleaseEnterYourMobileNumber,
                         );
@@ -91,7 +91,7 @@ class _CompleteProfileScreenState extends State<CompleteProfileScreen> {
                       hintText: AppString.city,
                       topPadding: 20,
                       validator: (value) {
-                        return ValidationChecking.nullAndNotEmpty(
+                        return Constants.nullAndNotEmpty(
                           value,
                           AppString.pleaseEnterYourCity,
                         );
@@ -107,7 +107,7 @@ class _CompleteProfileScreenState extends State<CompleteProfileScreen> {
                       bottomPadding: 20,
                       maxLine: 3,
                       validator: (value) {
-                        return ValidationChecking.nullAndNotEmpty(
+                        return Constants.nullAndNotEmpty(
                           value,
                           AppString.pleaseEnterYourShippingAddress,
                         );

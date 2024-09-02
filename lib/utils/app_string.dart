@@ -28,8 +28,12 @@ class AppString {
   static const String pleaseEnterYourShippingAddress = "Please enter your shipping address.";
 
   ///------Home screen------///
-static const String allCategory = "All Category";
-static const String popular = "Popular";
-static const String special = "Special";
-static const String newPart = "New";
+  static const String allCategory = "All Category";
+  static const String popular = "Popular";
+  static const String special = "Special";
+  static const String newPart = "New";
+
+  ///------Add review part------///
+  static const String writeReview = "Write Review";
+  static const String pleaseWriteYourReview = "Please write your review.";
 }

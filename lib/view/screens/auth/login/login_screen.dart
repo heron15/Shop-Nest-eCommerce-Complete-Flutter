@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:shop_nest/core/route/app_route.dart';
 import 'package:shop_nest/utils/app_string.dart';
-import 'package:shop_nest/utils/validation_checking.dart';
+import 'package:shop_nest/utils/constants.dart';
 import 'package:shop_nest/view/widgets/text_form_field_custom.dart';
 import 'package:shop_nest/view/widgets/top_info.dart';
 
@@ -44,7 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   topPadding: 20,
                   bottomPadding: 20,
                   validator: (value) {
-                    return ValidationChecking.validateEmail(value);
+                    return Constants.validateEmail(value);
                   },
                 ),
               ),
