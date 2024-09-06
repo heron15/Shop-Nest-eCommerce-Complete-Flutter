@@ -5,6 +5,7 @@ import 'package:shop_nest/core/dependency/dependency.dart';
 import 'package:shop_nest/core/route/app_route.dart';
 import 'package:shop_nest/core/themes/app_bar.dart';
 import 'package:shop_nest/core/themes/elevated_button.dart';
+import 'package:shop_nest/core/themes/text_style.dart';
 import 'package:shop_nest/utils/app_color.dart';
 
 class ShopNest extends StatelessWidget {
@@ -33,6 +34,7 @@ class ShopNest extends StatelessWidget {
         scaffoldBackgroundColor: AppColor.white,
         elevatedButtonTheme: getElevatedButtonThemeData(),
         appBarTheme: getAppBarTheme(),
+        textTheme: getTextTheme(),
       ),
     );
   }

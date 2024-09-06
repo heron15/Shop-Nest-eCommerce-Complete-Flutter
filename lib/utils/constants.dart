@@ -1,3 +1,6 @@
+import 'package:flutter/material.dart';
+import 'package:shop_nest/app.dart';
+
 class Constants {
   static String? validateEmail(String? value) {
     const emailPattern = r'^[^@]+@[^@]+\.[^@]+';
@@ -17,4 +20,6 @@ class Constants {
     return null;
   }
 
+  static double screenHeight = MediaQuery.of(ShopNest.navigatorKey.currentContext!).size.height;
+  static double screenWidth = MediaQuery.of(ShopNest.navigatorKey.currentContext!).size.width;
 }

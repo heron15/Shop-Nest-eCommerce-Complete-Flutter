@@ -1,17 +1,17 @@
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
 import 'package:shop_nest/app.dart';
-import 'package:shop_nest/view/screens/add_review/add_review_screen.dart';
-import 'package:shop_nest/view/screens/auth/complete_profile/complete_profile_screen.dart';
-import 'package:shop_nest/view/screens/auth/login/login_screen.dart';
-import 'package:shop_nest/view/screens/auth/otp_verify/otp_verify_screen.dart';
-import 'package:shop_nest/view/screens/categories/categories_screen.dart';
-import 'package:shop_nest/view/screens/category_product_view/category_product_view_screen.dart';
-import 'package:shop_nest/view/screens/home/home_screen.dart';
-import 'package:shop_nest/view/screens/main_bottom_bar/main_bottom_bar_screen.dart';
-import 'package:shop_nest/view/screens/product_details/product_details_screen.dart';
-import 'package:shop_nest/view/screens/review/review_screen.dart';
-import 'package:shop_nest/view/screens/splash/splash_screen.dart';
+import 'package:shop_nest/presentation/ui/screens/add_review/add_review_screen.dart';
+import 'package:shop_nest/presentation/ui/screens/auth/complete_profile/complete_profile_screen.dart';
+import 'package:shop_nest/presentation/ui/screens/auth/login/login_screen.dart';
+import 'package:shop_nest/presentation/ui/screens/auth/otp_verify/otp_verify_screen.dart';
+import 'package:shop_nest/presentation/ui/screens/categories/categories_screen.dart';
+import 'package:shop_nest/presentation/ui/screens/product_view/product_view_screen.dart';
+import 'package:shop_nest/presentation/ui/screens/home/home_screen.dart';
+import 'package:shop_nest/presentation/ui/screens/main_bottom_bar/main_bottom_bar_screen.dart';
+import 'package:shop_nest/presentation/ui/screens/product_details/product_details_screen.dart';
+import 'package:shop_nest/presentation/ui/screens/review/review_screen.dart';
+import 'package:shop_nest/presentation/ui/screens/splash/splash_screen.dart';
 
 class AppRoute {
   ///------Route paths------///
@@ -22,8 +22,8 @@ class AppRoute {
   static const String _mainBottomBarScreenPath = "/main_bottom_bar_screen";
   static const String _homeScreenPath = "/home_screen";
   static const String _categoriesScreenPath = "/categories_screen";
-  static const String _categoryProductViewScreenPath = "/category_product_view_screen";
-  static const String _productDetailsScreenPath = "/product_details_screen";
+  static const String _productViewScreenPath = "/product_view_screen/:apiUrl/:appBarTitle";
+  static const String _productDetailsScreenPath = "/product_details_screen/:id";
   static const String _reviewScreenPath = "/review_screen";
   static const String _addReviewScreenPath = "/add_review_screen";
 
@@ -35,7 +35,7 @@ class AppRoute {
   static const String mainBottomBarScreen = "mainBottomBar";
   static const String homeScreen = "home";
   static const String categoriesScreen = "categories";
-  static const String categoryProductView = "categoryProductView";
+  static const String productView = "productView";
   static const String productDetails = "productDetails";
   static const String reviewScreen = "reviewScreen";
   static const String addReviewScreen = "addReviewScreen";
@@ -80,14 +80,19 @@ class AppRoute {
         builder: (context, state) => const CategoriesScreen(),
       ),
       GoRoute(
-        name: categoryProductView,
-        path: _categoryProductViewScreenPath,
-        builder: (context, state) => const CategoryProductViewScreen(),
+        name: productView,
+        path: _productViewScreenPath,
+        builder: (context, state) => ProductViewScreen(
+          appBarTitle: state.pathParameters['appBarTitle']!,
+          apiUrl: state.pathParameters['apiUrl']!,
+        ),
       ),
       GoRoute(
         name: productDetails,
         path: _productDetailsScreenPath,
-        builder: (context, state) => const ProductDetailsScreen(),
+        builder: (context, state) => ProductDetailsScreen(
+          id: state.pathParameters['id']!,
+        ),
       ),
       GoRoute(
         name: reviewScreen,

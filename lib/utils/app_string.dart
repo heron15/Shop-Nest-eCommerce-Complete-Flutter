@@ -36,4 +36,8 @@ class AppString {
   ///------Add review part------///
   static const String writeReview = "Write Review";
   static const String pleaseWriteYourReview = "Please write your review.";
+
+  static const String somethingWentWrong = "Something went wrong!";
+  static const String errorForLoadingData = "Error for loading data!";
+  static const String noDataAvailable = "No data available!";
 }
