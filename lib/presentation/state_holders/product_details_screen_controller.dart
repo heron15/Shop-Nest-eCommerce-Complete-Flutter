@@ -1,12 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
-import 'package:get/get.dart';
-import 'package:shop_nest/data/model/network_response_model.dart';
-import 'package:shop_nest/data/model/product_details_model.dart';
-import 'package:shop_nest/data/model/wrapper/product_details_wrapper_model.dart';
-import 'package:shop_nest/data/network_caller/network_caller.dart';
-import 'package:shop_nest/presentation/ui/widgets/toast.dart';
-import 'package:shop_nest/utils/app_color.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class ProductDetailsScreenController extends GetxController {
   int _currentIndex = 0;

@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:loading_animation_widget/loading_animation_widget.dart';
-import 'package:shop_nest/utils/app_color.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class CenterProgressIndicator extends StatelessWidget {
   const CenterProgressIndicator({

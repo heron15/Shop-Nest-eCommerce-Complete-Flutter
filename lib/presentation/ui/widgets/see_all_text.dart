@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:shop_nest/utils/app_color.dart';
+
+
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class SeeAllText extends StatelessWidget {
   const SeeAllText({super.key, required this.header, required this.onTap});

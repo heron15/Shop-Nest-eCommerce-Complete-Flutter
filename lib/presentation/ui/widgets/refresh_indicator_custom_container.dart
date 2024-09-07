@@ -1,6 +1,4 @@
-import 'package:custom_refresh_indicator/custom_refresh_indicator.dart';
-import 'package:flutter/material.dart';
-import 'package:shop_nest/presentation/ui/widgets/center_progress_indicator.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class RefreshIndicatorCustomContainer extends StatelessWidget {
   const RefreshIndicatorCustomContainer({

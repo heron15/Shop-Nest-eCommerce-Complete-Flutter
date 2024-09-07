@@ -1,4 +1,4 @@
-import 'package:shop_nest/data/model/product_model.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class ProductViewWrapperModel {
   String? msg;

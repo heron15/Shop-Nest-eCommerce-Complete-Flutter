@@ -1,9 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:get/get.dart';
-import 'package:shop_nest/presentation/state_holders/splash_screen_controller.dart';
-import 'package:shop_nest/utils//app_color.dart';
-import 'package:shop_nest/utils//assets_path.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});

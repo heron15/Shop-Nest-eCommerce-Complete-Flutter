@@ -1,23 +1,4 @@
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:custom_refresh_indicator/custom_refresh_indicator.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:get/get.dart';
-import 'package:go_router/go_router.dart';
-import 'package:shop_nest/core/route/app_route.dart';
-import 'package:shop_nest/presentation/state_holders/product_details_screen_controller.dart';
-import 'package:shop_nest/presentation/ui/widgets/center_progress_indicator.dart';
-import 'package:shop_nest/presentation/ui/widgets/data_error/data_loading_error.dart';
-import 'package:shop_nest/presentation/ui/widgets/product_color_item.dart';
-import 'package:shop_nest/presentation/ui/widgets/product_size_item.dart';
-import 'package:shop_nest/presentation/ui/widgets/refresh_indicator_custom_container.dart';
-import 'package:shop_nest/presentation/ui/widgets/rich_text_two.dart';
-import 'package:shop_nest/utils//app_color.dart';
-import 'package:shop_nest/utils//assets_path.dart';
-import 'package:shop_nest/utils/api_urls.dart';
-import 'package:shop_nest/utils/constants.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class ProductDetailsScreen extends StatefulWidget {
   const ProductDetailsScreen({
@@ -423,11 +404,6 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                       );
                     },
                   ),
-
-                  /*Image.asset(
-                        AssetsPath.product,
-                        fit: BoxFit.fitWidth,
-                      ),*/
                 ),
               );
             },

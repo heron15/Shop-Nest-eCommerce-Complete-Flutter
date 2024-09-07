@@ -1,5 +1,4 @@
-import 'package:shop_nest/data/model/brand_model.dart';
-import 'package:shop_nest/data/model/category_model.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class ProductModel {
   int? id;

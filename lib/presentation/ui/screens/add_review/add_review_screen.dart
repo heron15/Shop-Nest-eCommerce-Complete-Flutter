@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:shop_nest/presentation/ui/widgets/text_form_field_custom.dart';
-import 'package:shop_nest/utils/app_string.dart';
-import 'package:shop_nest/utils/constants.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class AddReviewScreen extends StatefulWidget {
   const AddReviewScreen({super.key});

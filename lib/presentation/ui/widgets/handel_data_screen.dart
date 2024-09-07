@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:shop_nest/presentation/ui/widgets/data_error/data_loading_error.dart';
-import 'package:shop_nest/presentation/ui/widgets/no_data_available.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 Widget handleDataScreen(
   bool dataInProgress,

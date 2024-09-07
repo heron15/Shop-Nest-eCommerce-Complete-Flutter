@@ -1,10 +1,6 @@
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:shop_nest/data/model/product_slider_model.dart';
-import 'package:shop_nest/presentation/ui/widgets/center_progress_indicator.dart';
-import 'package:shop_nest/utils/app_color.dart';
-import 'package:shop_nest/utils/assets_path.dart';
+
+
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class ProductSlider extends StatelessWidget {
   const ProductSlider({

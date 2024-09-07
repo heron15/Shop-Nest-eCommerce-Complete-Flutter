@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:shop_nest/utils/app_string.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class NoDataAvailable extends StatelessWidget {
   const NoDataAvailable({

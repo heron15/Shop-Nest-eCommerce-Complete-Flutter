@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:shimmer/shimmer.dart';
-import 'package:shop_nest/utils/app_color.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class ShimmerWidget extends StatelessWidget {
   const ShimmerWidget({super.key, required this.child});

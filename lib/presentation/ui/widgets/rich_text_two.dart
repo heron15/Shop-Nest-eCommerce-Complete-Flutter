@@ -1,5 +1,4 @@
-import 'package:flutter/gestures.dart';
-import 'package:flutter/material.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class RichTextTwo extends StatelessWidget {
   const RichTextTwo({

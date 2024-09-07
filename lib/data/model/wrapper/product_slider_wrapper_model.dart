@@ -1,4 +1,4 @@
-import 'package:shop_nest/data/model/product_slider_model.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class ProductSliderWrapperModel {
   String? msg;

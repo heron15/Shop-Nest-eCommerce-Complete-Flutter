@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:shop_nest/app.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class Constants {
   static String? validateEmail(String? value) {

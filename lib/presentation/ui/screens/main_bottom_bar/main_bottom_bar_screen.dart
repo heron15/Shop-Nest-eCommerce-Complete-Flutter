@@ -1,12 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:shop_nest/presentation/ui/screens/cart/cart_screen.dart';
-import 'package:shop_nest/presentation/ui/screens/categories/categories_screen.dart';
-import 'package:shop_nest/presentation/ui/screens/home/home_screen.dart';
-import 'package:shop_nest/presentation/state_holders/main_bottom_bar_screen_controller.dart';
-import 'package:shop_nest/presentation/ui/widgets/custom_nav_item.dart';
-import 'package:shop_nest/presentation/ui/screens/wish/wish_screen.dart';
-import 'package:shop_nest/utils//app_color.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class MainBottomBarScreen extends StatefulWidget {
   const MainBottomBarScreen({super.key});

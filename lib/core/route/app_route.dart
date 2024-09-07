@@ -1,17 +1,4 @@
-import 'package:flutter/cupertino.dart';
-import 'package:go_router/go_router.dart';
-import 'package:shop_nest/app.dart';
-import 'package:shop_nest/presentation/ui/screens/add_review/add_review_screen.dart';
-import 'package:shop_nest/presentation/ui/screens/auth/complete_profile/complete_profile_screen.dart';
-import 'package:shop_nest/presentation/ui/screens/auth/login/login_screen.dart';
-import 'package:shop_nest/presentation/ui/screens/auth/otp_verify/otp_verify_screen.dart';
-import 'package:shop_nest/presentation/ui/screens/categories/categories_screen.dart';
-import 'package:shop_nest/presentation/ui/screens/product_view/product_view_screen.dart';
-import 'package:shop_nest/presentation/ui/screens/home/home_screen.dart';
-import 'package:shop_nest/presentation/ui/screens/main_bottom_bar/main_bottom_bar_screen.dart';
-import 'package:shop_nest/presentation/ui/screens/product_details/product_details_screen.dart';
-import 'package:shop_nest/presentation/ui/screens/review/review_screen.dart';
-import 'package:shop_nest/presentation/ui/screens/splash/splash_screen.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class AppRoute {
   ///------Route paths------///

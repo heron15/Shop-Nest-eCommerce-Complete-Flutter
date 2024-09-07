@@ -1,7 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:shop_nest/presentation/ui/widgets/cart_item.dart';
-import 'package:shop_nest/presentation/ui/widgets/rich_text_two.dart';
-import 'package:shop_nest/utils/app_color.dart';
+
+
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});

@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:shop_nest/presentation/state_holders/product_details_screen_controller.dart';
-import 'package:shop_nest/utils/app_color.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class ProductColorItem extends StatelessWidget {
   const ProductColorItem({

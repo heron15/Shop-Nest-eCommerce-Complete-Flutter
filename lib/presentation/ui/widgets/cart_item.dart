@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:shop_nest/utils/app_color.dart';
-import 'package:shop_nest/utils/assets_path.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class CartItem extends StatelessWidget {
   const CartItem({super.key});

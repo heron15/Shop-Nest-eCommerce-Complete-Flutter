@@ -1,9 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:shop_nest/core/route/app_route.dart';
-import 'package:shop_nest/presentation/ui/widgets/text_form_field_custom.dart';
-import 'package:shop_nest/presentation/ui/widgets/top_info.dart';
-import 'package:shop_nest/utils/app_string.dart';
-import 'package:shop_nest/utils/constants.dart';
+
+
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class CompleteProfileScreen extends StatefulWidget {
   const CompleteProfileScreen({super.key});

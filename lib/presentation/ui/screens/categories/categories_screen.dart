@@ -1,12 +1,6 @@
-import 'package:custom_refresh_indicator/custom_refresh_indicator.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:shop_nest/presentation/state_holders/categories_screen_controller.dart';
-import 'package:shop_nest/presentation/ui/widgets/category_item.dart';
-import 'package:shop_nest/presentation/ui/widgets/center_progress_indicator.dart';
-import 'package:shop_nest/presentation/ui/widgets/handel_data_screen.dart';
-import 'package:shop_nest/presentation/ui/widgets/refresh_indicator_custom_container.dart';
-import 'package:shop_nest/utils/constants.dart';
+
+
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class CategoriesScreen extends StatefulWidget {
   const CategoriesScreen({super.key});

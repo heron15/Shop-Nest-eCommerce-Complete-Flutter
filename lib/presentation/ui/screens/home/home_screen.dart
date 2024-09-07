@@ -1,31 +1,6 @@
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:custom_refresh_indicator/custom_refresh_indicator.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:get/get.dart';
-import 'package:go_router/go_router.dart';
-import 'package:shop_nest/core/route/app_route.dart';
-import 'package:shop_nest/presentation/state_holders/categories_screen_controller.dart';
-import 'package:shop_nest/presentation/state_holders/home_screen_controller.dart';
-import 'package:shop_nest/presentation/ui/widgets/handel_data_screen.dart';
-import 'package:shop_nest/presentation/ui/widgets/shimmer/home_remark_product_shimmer.dart';
-import 'package:shop_nest/utils/api_urls.dart';
-import 'package:shop_nest/utils/app_color.dart';
-import 'package:shop_nest/utils/app_string.dart';
-import 'package:shop_nest/utils/assets_path.dart';
-import 'package:shop_nest/presentation/ui/widgets/product_slider.dart';
-import 'package:shop_nest/presentation/ui/widgets/data_error/product_slider_error.dart';
-import 'package:shop_nest/presentation/ui/widgets/refresh_indicator_custom_container.dart';
-import 'package:shop_nest/presentation/ui/widgets/shimmer/all_category_list_shimmer.dart';
-import 'package:shop_nest/presentation/ui/widgets/shimmer/product_slider_shimmer.dart';
-import 'package:shop_nest/presentation/state_holders/main_bottom_bar_screen_controller.dart';
-import 'package:shop_nest/presentation/ui/screens/search/search_screen.dart';
-import 'package:shop_nest/presentation/ui/widgets/app_bar_action_item.dart';
-import 'package:shop_nest/presentation/ui/widgets/category_item.dart';
-import 'package:shop_nest/presentation/ui/widgets/product_item.dart';
-import 'package:shop_nest/presentation/ui/widgets/see_all_text.dart';
 
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

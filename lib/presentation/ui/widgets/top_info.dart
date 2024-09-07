@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:shop_nest/presentation/ui/widgets/rich_text_two.dart';
-import 'package:shop_nest/utils/app_color.dart';
-import 'package:shop_nest/utils/assets_path.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class TopInfo extends StatelessWidget {
   const TopInfo({

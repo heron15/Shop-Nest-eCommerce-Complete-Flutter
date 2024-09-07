@@ -1,13 +1,4 @@
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:go_router/go_router.dart';
-import 'package:shop_nest/core/route/app_route.dart';
-import 'package:shop_nest/data/model/category_model.dart';
-import 'package:shop_nest/presentation/ui/widgets/center_progress_indicator.dart';
-import 'package:shop_nest/utils/api_urls.dart';
-import 'package:shop_nest/utils/app_color.dart';
-import 'package:shop_nest/utils/assets_path.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class CategoryItem extends StatelessWidget {
   const CategoryItem({

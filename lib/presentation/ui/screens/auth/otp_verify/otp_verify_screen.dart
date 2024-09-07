@@ -1,13 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
-import 'package:go_router/go_router.dart';
-import 'package:shop_nest/core/route/app_route.dart';
-import 'package:shop_nest/presentation/ui/widgets/pin_code_text_field_custom.dart';
-import 'package:shop_nest/presentation/ui/widgets/rich_text_two.dart';
-import 'package:shop_nest/presentation/ui/widgets/toast.dart';
-import 'package:shop_nest/presentation/ui/widgets/top_info.dart';
-import 'package:shop_nest/utils/app_color.dart';
-import 'package:shop_nest/utils/app_string.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class OtpVerifyScreen extends StatefulWidget {
   const OtpVerifyScreen({super.key});

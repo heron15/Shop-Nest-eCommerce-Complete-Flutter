@@ -1,4 +1,4 @@
-import 'package:get/get.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class MainBottomBarScreenController extends GetxController {
   int _selectedIndex = 0;

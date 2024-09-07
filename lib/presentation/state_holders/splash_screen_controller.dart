@@ -1,8 +1,4 @@
-import 'package:get/get.dart';
-import 'package:go_router/go_router.dart';
-import 'package:package_info_plus/package_info_plus.dart';
-import 'package:shop_nest/app.dart';
-import 'package:shop_nest/core/route/app_route.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class SplashScreenController extends GetxController {
   String _versionCode = '';

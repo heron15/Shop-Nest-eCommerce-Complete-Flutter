@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:shop_nest/data/model/product_model.dart';
-
-import 'package:shop_nest/presentation/ui/widgets/product_item.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class WishScreen extends StatelessWidget {
   const WishScreen({super.key});

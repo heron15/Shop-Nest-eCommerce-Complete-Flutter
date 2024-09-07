@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:shop_nest/core/route/app_route.dart';
-import 'package:shop_nest/utils//app_color.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class ReviewScreen extends StatelessWidget {
   const ReviewScreen({super.key});

@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:shop_nest/presentation/ui/widgets/shimmer/shimmer_widget.dart';
-import 'package:shop_nest/utils/app_color.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class ProductSliderShimmer extends StatelessWidget {
   const ProductSliderShimmer({super.key});

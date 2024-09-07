@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:pin_code_fields/pin_code_fields.dart';
-import 'package:shop_nest/utils/app_color.dart';
+import 'package:shop_nest/core/export/app_widgets.dart';
 
 class PinCodeTextFieldCustom extends StatelessWidget {
   const PinCodeTextFieldCustom({
